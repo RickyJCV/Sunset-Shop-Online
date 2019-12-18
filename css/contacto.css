@@ -1,0 +1,79 @@
+#formContacto {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    border-radius: 7px;
+}
+
+section form h2 {
+    color: #f08c0d;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-family: MavenRegular;
+    margin-bottom: 20px;
+}
+
+#formContacto input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+#formContacto textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background: #f08c0d;
+    color: white;
+    padding: 20px;
+}
+
+details {
+    font-family: MavenBlack;
+    text-align: center;
+    color: white;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+
+/*USO MEDIA QUERIES*/
+
+@media (max-width:480px) {
+    #formContacto {
+        width: 100%;
+    }
+}
+
+video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+.textoFormulario {
+    font-family: MavenMedium;
+    color: white;
+}
+
+input {
+    font-family: MavenMedium;
+}

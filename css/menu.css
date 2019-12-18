@@ -1,0 +1,100 @@
+#menu-bar {
+    display: none;
+}
+
+header h1 {
+    padding-top: 3px;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.icon-menu {
+    color: white;
+    transition: color, 0.25s;
+}
+
+.icon-menu:hover {
+    color: #f08c0d;
+    transition: color, 0.25s;
+}
+
+.menu a {
+    font-family: MavenMedium;
+    display: block;
+    color: white;
+    padding: 15px 10px;
+    height: 50px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.estadoActual {
+    /*ESTADO PARA CADA UNO DE LOS LINKS*/
+    font-family: MavenBlack !important;
+    color: #f08c0d !important;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu-bar:checked~.menu {
+    transform: translateX(0%);
+    width: 50% !important;
+}
+
+#menu-bar:checked~.icon-menu {
+    color: #f08c0d !important;
+}
+/*USO MEDIA QUERIES*/
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        float: right;
+        transform: translateX(0%);
+        display: flex;
+        background: black;
+    }
+    .menu a:hover {
+        background: black;
+    }
+    nav>a {
+        transition: color, 0.25s;
+    }
+    .transicionNav:hover {
+        color: #f08c0d;
+        transition: color, 0.25s;
+    }
+    .menu a {
+        border: none;
+        text-align: center;
+        margin: 0px 30px;
+        color: white;
+        padding: 15px 10px;
+    }
+    header label {
+        display: none;
+    }
+    .estadoActual {
+        color: #f08c0d !important;
+        font-family: MavenBlack !important;
+    }
+}

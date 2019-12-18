@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estiloIndex.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="javascript/scripts.js"></script>
+    <title>Productos - Sunset</title>
+</head>
+
+<body>
+    <div class="parent">
+        <!-- CABECERA COMPLETA -->
+        <div class="cabecera">
+            <header>
+                <div class="contenedor">
+                    <h1 class="icon-sun">Sunset</h1>
+                    <input type="checkbox" id="menu-bar">
+                    <label class="icon-menu" for="menu-bar"></label>
+                    <nav class="menu">
+                        <a href="index.html" class="transicionNav">Inicio</a>
+                        <a href="productos.html" class="estadoActual">Productos</a>
+                        <a href="contacto.html" class="transicionNav">Contacto</a>
+                        <a class="icon-shopping-bag"></a>
+                        <button onclick="document.getElementById('id01').style.display='block'">INICIAR SESIÓN</button>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <!--LOGIN-->
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="/action_page.php">
+
+                <div class="container">
+                    <label for="uname"><b>Nombre de usuario</b></label>
+                    <input type="text" placeholder="Introduce nombre de usuario" id="uname" required>
+
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Introduce contraseña" id="psw" required>
+
+                    <button type="submit">INICIAR SESIÓN</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Recordarme
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancelar</button>
+                    <span class="psw"><a href="registro.html">¡Registrarme ahora!</a></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- PRODUCTOS -->
+        <!-- Aquí incluyo imágenes -->
+        <div class="cuerpo">
+            <section class="productosTienda">
+                <h2 class="productosEncabezado">Productos</h2>
+                <div class="contenedor-galeria">
+                    <div class="ropa">
+                        <img src="images/camiseta.png" alt="Camiseta Random" class="galeria__img">
+                        <h4>Camiseta Random</h4>
+                    </div>
+
+                    <div class="ropa">
+                        <img src="images/camiseta2.jpg" alt="Camiseta TheNorthFace con Estampado" class="galeria__img">
+                        <h4>Camiseta TheNorthFace con Estampado</h4>
+                    </div>
+
+                    <div class="ropa">
+                        <img src="images/camiseta3.jpg" alt="Camiseta Hollister con Degradado" class="galeria__img">
+                        <h4>Camiseta Hollister con Degradado</h4>
+                    </div>
+
+                    <div class="ropa">
+                        <img src="images/sudadera1.jpg" alt="Sudadera Nike (Chicago Bulls)" class="galeria__img">
+                        <h4>Sudadera Nike (Chicago Bulls)</h4>
+                    </div>
+
+                    <div class="ropa">
+                        <img src="images/sudadera2.jpg" alt="Sudadera TheNorthFace White" class="galeria__img">
+                        <h4>Sudadera TheNorthFace White</h4>
+                    </div>
+
+                    <div class="ropa">
+                        <img src="images/sudadera3.jpg" alt="Sudadera Hollister White" class="galeria__img">
+                        <h4>Sudadera Hollister White</h4>
+                    </div>
+
+                    <div class="ropa">
+                        <img src="images/abrigo1.jpg" alt="Abrigo TheNorthFace" class="galeria__img">
+                        <h4>Abrigo TheNorthFace</h4>
+                    </div>
+
+                    <div class="ropa">
+                        <img src="images/abrigo2.jpeg" alt="Chaqueta Nike" class="galeria__img">
+                        <h4>Chaqueta Nike</h4>
+                    </div>
+
+                    <div class="ropa">
+                        <img src="images/abrigo3.jpg" alt="Abrigo Hollister" class="galeria__img">
+                        <h4>Abrigo Hollister</h4>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="pie">
+            <footer>
+                <div class="container-footer-all">
+                    <div class="container-body">
+
+                        <div class="column1">
+                            <!-- Uso el atributo translate en el nombre de la marca para que no sea traducido -->
+                            <h1 translate="no">Sunset</h1>
+                            <p>Tienda online de<br> ropa de última moda.
+                            </p>
+                        </div>
+
+
+                        <div class="column2">
+                            <h2>Redes sociales</h2>
+                            <div class="row">
+                                <img src="images/facebook.png" alt="Logo Facebook">
+                                <label>Síguenos en Facebook</label>
+                            </div>
+                            <div class="row">
+                                <img src="images/twitter.png" alt="Logo Twitter">
+                                <label>Síguenos en Twitter</label>
+                            </div>
+                            <div class="row">
+                                <img src="images/instagram.png" alt="Logo Instagram">
+                                <label>Síguenos en Instagram</label>
+                            </div>
+                        </div>
+
+                        <div class="column3">
+                            <h2>Contacto</h2>
+                            <div class="row2">
+                                <img src="images/ubicacion.png" alt="Logo ubicacion">
+                                <label>Sevilla,
+                                    41019 (España)</label>
+                            </div>
+
+                            <div class="row2">
+                                <img src="images/llamada.png" alt="Logo llamada">
+                                <label>902 123 456
+                                </label>
+                            </div>
+
+                            <div class="row2">
+                                <img src="images/email.png" alt="Logo email">
+                                <label>contact@sunset.com</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="container-footer">
+                    <div class="copyright">
+                        &copy; 2019 Todos los Derechos Reservados | Sunset&Co
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

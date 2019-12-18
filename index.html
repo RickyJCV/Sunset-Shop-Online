@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Uso codificación "UTF-8"-->
+    <meta charset="UTF-8">
+    <!--Uso viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estiloIndex.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="javascript/scripts.js"></script>
+    <title>Inicio - Sunset</title>
+</head>
+
+<body>
+    <!--Uso css y div para maquetar-->
+    <div class="parent">
+        <!-- CABECERA COMPLETA -->
+        <div class="cabecera">
+            <header>
+                <div class="contenedor">
+                    <h1 class="icon-sun">Sunset</h1>
+                    <input type="checkbox" id="menu-bar">
+                    <label class="icon-menu" for="menu-bar"></label>
+                    <nav class="menu">
+                        <a href="index.html" class="estadoActual">Inicio</a>
+                        <a href="productos.html" class="transicionNav">Productos</a>
+                        <a href="contacto.html" class="transicionNav">Contacto</a>
+                        <a class="icon-shopping-bag"></a>
+                        <button onclick="document.getElementById('id01').style.display='block'">INICIAR SESIÓN</button>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <!--LOGIN-->
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="/action_page.php">
+
+                <div class="container">
+                    <label for="uname"><b>Nombre de usuario</b></label>
+                    <input type="text" placeholder="Introduce nombre de usuario" id="uname" required>
+
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Introduce contraseña" id="psw" required>
+
+                    <button type="submit">INICIAR SESIÓN</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Recordarme
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                    <span class="psw"><a href="registro.html">¡Registrarme ahora!</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="cuerpo">
+            <!-- BANNER -->
+            <!-- Aquí aparece un warning recomendando poner h2 a estos articulos y secciones pero en este caso no es necesario porque es un banner -->
+            <section>
+                <article>
+                    <div class="slider">
+                        <ul>
+                            <li><img src="images/banner1.jpg" alt="banner1"></li>
+                            <li><img src="images/banner2.jpg" alt="banner2"></li>
+                            <li><img src="images/banner3.jpg" alt="banner3"></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <!-- MARCAS -->
+            <section id="marcas">
+                <h3>Marcas</h3>
+                <div class="contenedor">
+                    <!-- Usamos el atributo translate no en las marcas para que no se traduzca su nombre y siempre sea el mismo -->
+                    <article>
+                        <figure>
+                            <img src="images/hollister.png" alt="Hollister">
+                            <figcaption>Logo Hollister</figcaption>
+                        </figure>
+                        <h4 translate="no">Hollister</h4>
+                    </article>
+                    <article>
+                        <img src="images/northface.png" alt="The North Face">
+                        <h4 translate="no">The North Face</h4>
+                    </article>
+                    <article>
+                        <img src="images/nike.png" alt="Nike">
+                        <h4 translate="no">Nike</h4>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="pie">
+            <footer>
+                <div class="container-footer-all">
+                    <div class="container-body">
+
+                        <div class="column1">
+                            <!--Uso translate para que no se traduzca el nombre de la marca-->
+                            <h1 translate="no">Sunset</h1>
+                            <p>Tienda online de<br> ropa de última moda.
+                            </p>
+                        </div>
+
+
+                        <div class="column2">
+                            <h2>Redes sociales</h2>
+                            <div class="row">
+                                <img src="images/facebook.png" alt="Logo Facebook">
+                                <label>Síguenos en Facebook</label>
+                            </div>
+                            <div class="row">
+                                <img src="images/twitter.png" alt="Logo Twitter">
+                                <label>Síguenos en Twitter</label>
+                            </div>
+                            <div class="row">
+                                <img src="images/instagram.png" alt="Logo Instagram">
+                                <label>Síguenos en Instagram</label>
+                            </div>
+                        </div>
+
+                        <div class="column3">
+                            <h2>Contacto</h2>
+                            <div class="row2">
+                                <img src="images/ubicacion.png" alt="Logo ubicacion">
+                                <label>Sevilla,
+                                    41019 (España)</label>
+                            </div>
+
+                            <div class="row2">
+                                <img src="images/llamada.png" alt="Logo llamada">
+                                <label>902 123 456
+                                </label>
+                            </div>
+
+                            <div class="row2">
+                                <img src="images/email.png" alt="Logo email">
+                                <label>contact@sunset.com</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="container-footer">
+                    <div class="copyright">
+                        &copy; 2019 Todos los Derechos Reservados | Sunset&Co
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

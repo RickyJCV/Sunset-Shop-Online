@@ -1,0 +1,28 @@
+#marcas h3,
+h4 {
+    text-align: center;
+    font-family: MavenRegular;
+}
+
+#marcas .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#marcas figcaption {
+    display: none;
+}
+
+#marcas article {
+    margin: 15px;
+}
+
+#marcas img {
+    width: 100%;
+    max-width: 280px;
+}
+
+#marcas img:hover {
+    transform: scale(1.2, 1.2);
+}

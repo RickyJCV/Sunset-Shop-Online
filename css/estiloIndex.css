@@ -1,0 +1,192 @@
+@import url(banner.css);
+@import url(footer.css);
+@import url(menu.css);
+@import url(marcas.css);
+@import url(contacto.css);
+@import url(productos.css);
+@font-face {
+    font-family: MavenBlack;
+    src: url(../fonts/MavenPro-Black.ttf);
+}
+
+@font-face {
+    font-family: MavenMedium;
+    src: url(../fonts/MavenPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: MavenRegular;
+    src: url(../fonts/MavenPro-Regular.ttf);
+}
+
+.parent {
+  /*GRID LAYOUT*/
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 0.09fr 1fr 1fr;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    color: #f08c0d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+}
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+    .menu {
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+ /*ESTILO LOGIN*/
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 0px 0;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: MavenBlack;
+  transition: color, 0.25s;
+}
+
+button:hover {
+  /*opacity: 0.8;*/
+  transition: color, 0.25s;
+  color: #f08c0d;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    font-family: MavenRegular;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Boton cancelar */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Animación de zoom */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+/* USO PREFIJO WEBKIT */
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+/*USO TRANSFORMACIONES*/
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Uso media queries */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

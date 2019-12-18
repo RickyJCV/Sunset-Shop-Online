@@ -1,0 +1,61 @@
+.productosTienda{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: MavenRegular;
+}
+
+.productosEncabezado{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.contenedor-galeria{
+    /*FLEXBOX*/
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.galeria__img{
+    width: 400px;
+    height: 300px;
+    margin-bottom: 10px;
+    /*USO OBJECT FIT*/
+    object-fit: contain;
+    filter: opacity(75%);
+    animation: escalar 1.5s infinite alternate;
+}
+.ropa{
+    margin-bottom: 50px;
+}
+
+/*USO TRANSFORMACIONES*/
+@keyframes escalar{
+to{
+    transform: scale(1);
+}
+from{
+    transform: scale(1.05);
+}
+}
+
+.galeria__img:hover{
+    filter: opacity(100%);
+}
+/*USO MEDIA QUERIES*/
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        @keyframes escalar{
+to{
+    transform: scale(0.85);
+}
+from{
+    transform: scale(0.9);
+}
+}
+     }
